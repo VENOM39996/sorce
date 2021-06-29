@@ -166,7 +166,7 @@ runService:BindToRenderStep(shared._id, 1, function()
 					if arrow.Data.Length > 0 then
 						fastWait(arrow.Data.Length)
 					else
-						fastWait(0.0001) -- 0.1 seems to make it miss more, this should be fine enough?
+						fastWait(0.00001) -- 0.1 seems to make it miss more, this should be fine enough?
 					end
 
 					fireSignal(scrollHandler, userInputService.InputEnded, { KeyCode = keys[position], UserInputType = Enum.UserInputType.Keyboard }, false)
